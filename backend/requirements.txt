@@ -1,0 +1,19 @@
+# Sahaay backend — Python Flask
+flask>=3.1
+flask-cors>=4.0
+python-dotenv>=1.0.1
+
+# Google Sheets API (the configured datastore; app falls back to SQLite without it)
+google-auth>=2.36
+google-api-python-client>=2.150
+google-auth-httplib2>=0.2
+
+# WSGI/ASGI bridge so the pod's uvicorn can serve the Flask app
+asgiref>=3.8
+uvicorn>=0.30
+gunicorn>=22.0
+
+# tests
+pytest>=8.0
+pytest-xdist>=3.6
+httpx>=0.27

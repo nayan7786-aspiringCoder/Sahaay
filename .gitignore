@@ -1,0 +1,26 @@
+# --- Node / frontend ---
+node_modules/
+# frontend/dist is kept on purpose: it lets `python server.py` serve the site offline without Node.js
+frontend/.vite/
+
+# --- Python / backend ---
+__pycache__/
+*.pyc
+.venv/
+backend/.venv/
+
+# Local SQLite data (offline demo store)
+backend/data/
+
+# Secrets — never commit credentials
+backend/.env
+.env
+*.pem
+service-account*.json
+secrets/
+
+# Tooling / platform
+.emergent/
+test_reports/
+.pytest_cache/
+.DS_Store
